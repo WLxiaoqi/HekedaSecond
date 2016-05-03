@@ -1,0 +1,27 @@
+//
+//  JXPrefixHeader.pch
+//  即刻出行
+//
+//  Created by WeiBang on 16/5/3.
+//  Copyright © 2016年 WeiBang. All rights reserved.
+//
+
+#ifndef JXPrefixHeader_pch
+#define JXPrefixHeader_pch
+
+
+#ifdef DEBUG
+
+#define JXLog(...) NSLog(__VA_ARGS__);
+
+#else
+
+#define JXLog(...)
+
+#endif
+
+//获取屏幕宽高
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* JXPrefixHeader_pch */
